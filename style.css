@@ -1,3 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+}
+
+a {
+   color: white;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
 @font-face {
     font-family: 'Norse';
     src: url('fonts/Norse-Bold.woff2') format('woff2'),
@@ -5,4 +21,61 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.advertisement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-image: url(images/leaf-background.avif);
+    background-size: auto 100%;
+}
+
+.logo-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0, 50%);
+    margin-top: 20vh;
+}
+
+.logo-container > img {
+    height: 180px;
+}
+
+.logo-container-text {
+    display: flex;
+    align-items: center;
+    padding-top: 25px; /* Norse font has a slight offset for some reason. */
+    font-family: 'Norse';
+    font-size: 8rem;
+    color: white;
+}
+
+.photo-credit {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Proxima Nova Rg';
+}
+
+.sign-up-form-container {
+    flex: 2;
 }
