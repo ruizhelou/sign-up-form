@@ -56,15 +56,15 @@ a {
 }
 
 .logo-container > img {
-    height: 180px;
+    height: 15vh;
 }
 
 .logo-container-text {
     display: flex;
     align-items: center;
-    padding-top: 25px; /* Norse font has a slight offset for some reason. */
+    padding-top: 2vh; /* Norse font has a slight offset for some reason. */
     font-family: 'Norse';
-    font-size: 8rem;
+    font-size: 10vh;
     color: white;
 }
 
